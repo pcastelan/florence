@@ -63,8 +63,23 @@ html, body{
 		padding: 20px;
 	}
 		.ic-titulo{
-			margin-bottom:15px;
+			margin-bottom:10px;
 		}
+		.ic-linha-fina{
+			font-family: 'Ubuntu', sans-serif;
+			color: #666;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+	.ic-simbolo-math{
+		color: #000;
+		font-size: 120%;
+		background: #F5F5F3;
+		padding: 4px;
+		line-height: 150%;
+		white-space: nowrap;
+	}
 
 
 	.ic-respostaBox{
@@ -159,7 +174,7 @@ html, body{
 .ic-menu__item{
 	background: #ECE6E3;
 	/*background: #01295C;*/
-	padding: 15px;
+	/*padding: 15px;*/
 }
 	.ic-menu__item:hover{
 		background: #D91E18;
@@ -171,7 +186,8 @@ html, body{
 	text-decoration: none;
 	font-weight: 700;
 	font-size: 13px;
-
+	display: block;
+	padding: 15px;
 }
 .ic-menu__item--atual{
 	background: #01295C;
@@ -368,7 +384,7 @@ html, body{
 }
 #ic-nomeVariavel{	
 	width: 145px;
-	height: 35px;
+	height: 30px;
 	margin-bottom: 30px;
 
 }
@@ -415,9 +431,10 @@ html, body{
 	display: block;
 }
 .ic-graficos__entradas label{
-	color: #ECE6E3;	
-	font-size: 13px;
-	font-weight: bold;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 11px;
 	padding: 5px 5px 5px 0;
 }
 .ic-graficos__eixos, .ic-graficos__selectWrapper{
