@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciação Cientifica: Gráficos </title>
+    <meta name="description" content="Calcula média dos números inseridos">
+    <!-- Bootstrap -->
+    <!-- <link href="../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/logo-azul.png"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  </head>
+
+  <body>
+
+    <div id="ic-cabecalho" class="ic-mobile-hide">
+      <nav role="navigation">
+        <ul class="ic-menu">
+          <li class="ic-menu__item"><a class="ic-menu__link" href="index.html">Inicio</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="media.html">Média</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="frequencia.html">Tabela de frequência</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="moda.html">Moda</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="mediana.html">Mediana</a></li>
+          <li class="ic-menu__item ic-menu__item--atual"><a class="ic-menu__link" href="graficos.html">Gráficos</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="separatrizes.html">Separatrizes</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="variabilidade.html">Variabilidade</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="ic-conteudo">
+      
+      <div class="ic-descricao">
+        <h1 class="ic-titulo">Gráficos</h1>
+        <h2 class="ic-titulo">Gráfico de Barras e Gráfico de Pizza</h2>
+      </div>
+      <div class="ic-inputsBox">
+
+        <div class="ic-graficos__entradas">
+          <div class="ic-graficos__selectWrapper">
+            <label class="ic-graficos__tipoLabel">Escolha o tipo de gráfico:</label>
+            <select class="ic-graficos__select"> 
+              <option value="vazio">Selecione</option> 
+              <option value="bar">Barras</option>
+              <option value="pie">Pizza</option>
+            </select>
+            <!-- botao que confirma a seleção -->
+            <button class="ic-graficos__select--selecionar">ok</button>
+
+          </div>
+          <div class="ic-graficos__tituloWrapper">
+            <label for="ic-graficos__titulo">Título do Gráfico</label>
+            <input class=" ic-graficos__eixos" id="ic-graficos__titulo" type="text">
+          </div>
+          <div class="ic-graficos__wrapperEixo">
+            <label for="ic-graficos__eixox">Título eixo X</label>
+            <input type="text" class="ic-graficos__eixos" id="ic-graficos__eixox">
+            
+          </div>
+          <div class="ic-graficos__wrapperEixo">
+            <label for="ic-graficos__eixoy">Título eixo Y</label>
+            <input type="text" class="ic-graficos__eixos" id="ic-graficos__eixoy">            
+          </div>
+        </div>
+        <button data-funcionalidade="graficos" class="ic-btn-input ic-botaoCalcula">Calcular</button>
+                 
+        <div class="ic-inputsWrapper">
+
+          <div class="ic-btnsEntradas">
+            <button class="ic-btn-input ic-botaoInsereEntrada"><i class="fas fa-plus"></i></button>
+            <button class="ic-btn-input ic-botaoRemoveEntrada"><i class="fas fa-minus"></i></button>
+          </div>
+          <div class="ic-inputsBox__inputs">
+            <div class="ic-inputsBox__inputs--entrada1">
+              <input type="text" class="ic-inputs ic-inputsBox__inputs--entrada1">    
+            </div>
+          </div>
+        </div>
+
+
+      </div> 
+      <div class="ic-respostaBox">
+        <div class="ic-respostaWrapper" id="ic-grafico-1">
+          
+        </div>
+      </div>
+
+    </div>
+    <a href="#" class="ic-mobile-nav" title="abrir menu navegação"><i class="fas fa-bars" ></i></a>
+    <a href="#" class="ic-mobile-nav--fechar " title="fechar menu navegação">
+      <img src="img/fechar.svg" alt="fechar" class="ic-mobile-fechar__icone ">
+    </a>
+    <div id="ic-rodape">
+      
+    </div>
+
+    
+    <script src="resources/jquery/jquery-1.12.4.min.js"></script>
+    <!-- <script src="../resources/bootstrap/js/bootstrap.min.js"></script>-->
+     <script src="js/includes.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="resources/echarts/echarts.min.js"></script>
+  </body>
+</html>

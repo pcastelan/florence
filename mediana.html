@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Florence: Mediana </title>
+    <meta name="description" content="Calculo da mediana dos valores inseridos">
+    <!-- Bootstrap -->
+    <!-- <link href="../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/logo-azul.png"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  </head>
+
+  <body>
+
+    <div id="ic-cabecalho" class="ic-mobile-hide">
+      <nav role="navigation">
+        <ul class="ic-menu">
+          <li class="ic-menu__item"><a class="ic-menu__link" href="index.html">Inicio</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="media.html">Média</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="frequencia.html">Tabela de frequência</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="moda.html">Moda</a></li>
+          <li class="ic-menu__item ic-menu__item--atual"><a class="ic-menu__link" href="mediana.html">Mediana</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="graficos.html">Gráficos</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="separatrizes.html">Separatrizes</a></li>
+          <li class="ic-menu__item"><a class="ic-menu__link" href="variabilidade.html">Variabilidade</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="ic-conteudo">
+      
+      <div class="ic-descricao">
+        <h1 class="ic-titulo">Mediana</h1>
+        
+      </div>
+      <div class="ic-inputsBox">
+
+    
+        <button data-funcionalidade="mediana" class="ic-btn-input ic-botaoCalcula">Calcular</button>
+                 
+        <p class="ic-avisoSoNum">Insira apenas números.</p>
+
+        <div class="ic-inputsWrapper">
+          <div class="ic-btnsEntradas">
+            <button class="ic-btn-input ic-botaoInsereEntrada"><i class="fas fa-plus"></i></button>
+            <button class="ic-btn-input ic-botaoRemoveEntrada"><i class="fas fa-minus"></i></button>
+          </div>
+          <div class="ic-inputsBox__inputs">
+            <div class="ic-inputsBox__inputs--entrada1">
+              <input type="text" class="ic-inputs ic-inputsBox__inputs--entrada1">    
+            </div>
+          </div>
+        </div>
+
+
+      </div> 
+      <div class="ic-respostaBox">
+        <div class="ic-respostaWrapper">
+          <p class="ic-resposta"></p>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" class="ic-mobile-nav" title="abrir menu navegação"><i class="fas fa-bars" ></i></a>
+    <a href="#" class="ic-mobile-nav--fechar " title="fechar menu navegação">
+      <img src="img/fechar.svg" alt="fechar" class="ic-mobile-fechar__icone ">
+    </a>
+    <div id="ic-rodape">
+      
+    </div>
+
+    
+    <script src="resources/jquery/jquery-1.12.4.min.js"></script>
+    <!-- <script src="../resources/bootstrap/js/bootstrap.min.js"></script>-->
+     <script src="js/includes.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
