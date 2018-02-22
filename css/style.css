@@ -111,8 +111,17 @@ html, body{
 		
 		display: none;
 	}
-	 .ic-graficos__tituloWrapper{display:none;}
-	
+	.ic-graficos__tituloWrapper{display:none;}
+	.ic-graficos__breadcrumb{display: none;margin: -20px -20px 15px -20px;background: #001633; padding: 5px 20px;}
+	.ic-graficos__breadcrumb > *{
+		color:#efefef;
+		font-style: font-family: 'Ubuntu', sans-serif;
+		text-decoration: underline;
+		font-weight: bold;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+	.ic-graficos__breadcrumb__separacao{margin-left: 5px;margin-right: 5px;text-decoration:none; }
 
 /*
 		rodape
