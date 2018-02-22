@@ -371,6 +371,8 @@ $(document).ready(function(){
 				
 				if(tipo !=='vazio'){
 					$('#ic-grafico-1').show();
+
+
 					//inicia a api dos gráficos
 					var myChart = echarts.init(document.getElementById('ic-grafico-1'));
 					focoResposta();
@@ -471,6 +473,8 @@ $(document).ready(function(){
 							break;
 
 						case "pie":
+							
+
 							// formata os dados inserido para a api
 							var valores = geraValorPizza(); 
 
@@ -772,6 +776,13 @@ $(document).ready(function(){
 
 			$('.ic-respostaBox').css('padding', 0);
 
+			$('.ic-graficos__breadcrumb').show();
+			// if()
+			if(tipo === 'bar'){
+				$('.ic-graficos__breadcrumb__tipo').text('Gráfico de Barras');
+			} else if (tipo === 'pie'){
+				$('.ic-graficos__breadcrumb__tipo').text('Gráfico de Pizza');
+			}
 		}
 
 	});
