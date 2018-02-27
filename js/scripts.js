@@ -317,12 +317,12 @@ $(document).ready(function(){
 		if (inputVazio > 0){
 
 			//mensagem de erro quando o usuario tentar enviar campos vazios
-			$('.ic-titulosBox').append('<div class="row"><div class="ic-input-erro__box col-md-12"><p>Você está tentando enviar um ou mais campos vazios, preencha os campos destacados.</p></div></div>');
+			$('.ic-inputsBox').prepend('<p class="ic-input-erro__box">Você está tentando enviar um ou mais campos vazios, preencha os campos destacados.</p>');
 
 		} else if ( inputNum > 0 ) {
 			
 			//mensagem de erro quando o usuario tentar enviar texto onde so aceitam numeros
-			$('.ic-titulosBox').append('<div class="row"><div class="ic-input-erro__box col-md-12"><p>Você só pode inserir números, corrija os campos destacados</p></div></div>');
+			$('.ic-inputsBox').prepend('<p class="ic-input-erro__box">Você só pode inserir números, corrija os campos destacados</p>');
 
 		} else {// se nao existirem erros, sao feitos os calculos
 			
