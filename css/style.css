@@ -21,6 +21,14 @@ html, body{
 	width: 100%;
   height: 100%;
 }
+code{
+	padding: 3px;
+	line-height: 30px;
+	border-radius: 3px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	margin: 0 4px;
+	font-size: 15px;
+}
 
 
 /*
@@ -72,16 +80,6 @@ html, body{
 			font-size: 15px;
 			font-weight: 500;
 		}
-
-	.ic-simbolo-math{
-		color: #000;
-		font-size: 120%;
-		background: #F5F5F3;
-		padding: 4px;
-		line-height: 150%;
-		white-space: nowrap;
-	}
-
 
 	.ic-respostaBox{
 		grid-area: resposta;
@@ -164,6 +162,7 @@ html, body{
 	}
 	.ic-rodape__link-github:hover{
 		opacity: 0.8;
+		margin-top:-2px;
 	}
 		.ic-rodape__github-logo{
 			margin: 0;
@@ -239,7 +238,19 @@ html, body{
 		margin-top:-2px;
 		margin-bottom:17px;
 	}
-
+.ic-input-erro{
+	background: #ea7b83;
+}
+.ic-input-erro__box{
+	background: #cf5963;
+	padding: 25px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fbd0d2;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	margin: 15px 0;
+	border-radius: 2px;
+}
 .ic-inputsWrapper{
 	display: grid;
 	grid-template-areas: "entradas  botoes";
