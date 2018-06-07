@@ -7,6 +7,9 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+a:link{
+	text-decoration:none;
+}
 input{
 	border-radius: 2px;
 	border: none;
@@ -145,6 +148,12 @@ code{
 		/*color: #ccc;*/
 		color: #a3c7f5;
 	}
+		.ic-rodape__creditos a{
+			color:#fbd0d2;
+		}
+			.ic-rodape__creditos a:hover{
+				color: #ea7b83;
+			}
 
 
 	.ic-rodape__creditos{
@@ -566,7 +575,7 @@ button.ic-graficos__select--selecionar::-moz-focus-inner {border: 0; padding: 0;
 		grid-template-areas: "menu  conteudo"
 												 "rodape  rodape";
 		grid-template-columns: 225px 1fr;
-		grid-template-rows: 1fr 150px;
+		grid-template-rows: 1fr 100px;
 	}
 	.ic-cabecalho{
 		min-height: 90vh;
