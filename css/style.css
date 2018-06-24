@@ -57,14 +57,14 @@ code{
 	grid-area: conteudo;
 	font-size: 14px;
 	display: grid;
+	line-height: 25px;
 	
 }	
 	.ic-inputsBox{
 		grid-area: inputs;
 		padding: 20px;
 		background: #01295C;
-	}
-		
+	}		
 
 	.ic-descricao--index{
 		padding: 20px;
@@ -78,7 +78,7 @@ code{
 		}
 		.ic-linha-fina{
 			font-family: 'Ubuntu', sans-serif;
-			color: #5b483e;
+			color: #444;
 			margin-bottom: 20px;
 			font-size: 15px;
 			font-weight: 500;
@@ -196,7 +196,7 @@ code{
 	/*padding: 15px;*/
 }
 	.ic-menu__item:hover{
-		background: #D91E18;
+		background: #5C97BF;
 	}
 .ic-menu__link{
 	font-family: 'Ubuntu', sans-serif;
@@ -358,7 +358,7 @@ code{
 	 */
 
 	.ic-menu__item{background: #01295C;}
-	.ic-menu__item:hover{background: #E82125;		}
+	.ic-menu__item:hover{background: #5C97BF;		}
 	.ic-menu__link{color: #ECE6E3;}
 	.ic-menu__item--atual{background: #ECE6E3;}
 	.ic-menu__item--atual .ic-menu__link{color: #01295C;}
@@ -561,7 +561,7 @@ button.ic-graficos__select--selecionar::-moz-focus-inner {border: 0; padding: 0;
 
 	#ic-cabecalho{background: #01295C;}
 	.ic-menu__item{background: #01295C;}
-	.ic-menu__item:hover{background: #E82125;		}
+	.ic-menu__item:hover{background: #5C97BF;		}
 	.ic-menu__link{color: #ECE6E3;}
 	.ic-menu__item--atual{background: #ECE6E3;}
 	.ic-menu__item--atual .ic-menu__link{color: #01295C;}
