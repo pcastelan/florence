@@ -557,7 +557,7 @@ $(document).ready(function(){
 				var desvioPadrao = calculaDesvioPadrao(variancia);
 				var coeficienteVariacao = calculaCoeficienteVariacao(desvioPadrao, media);
 
-				$('.ic-resposta').html('<strong>Variância</strong>: '+ arredonda2(variancia)	+ '<br><strong>Desvio Padrão</strong>: '+ arredonda2(desvioPadrao) +'<br><strong>Coeficiente de Variação</strong>: '+ arredonda2(coeficienteVariacao) +'% - ');
+				$('.ic-resposta').html('<strong>Variância</strong>: '+ variancia + '<br><strong>Desvio Padrão</strong>: '+ desvioPadrao +'<br><strong>Coeficiente de Variação</strong>: '+ coeficienteVariacao /*+'% - '*/);
 				focoResposta();
 				
 				//escreve na página o nível da dispersao
