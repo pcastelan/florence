@@ -561,7 +561,7 @@ $(document).ready(function(){
 				focoResposta();
 				
 				//escreve na página o nível da dispersao
-				if (coeficienteVariacao <= 15) {
+				/*if (coeficienteVariacao <= 15) {
 
 					$('.ic-resposta').append('<em>baixa</em> dispersão (dados homogêneos)');
 
@@ -573,7 +573,7 @@ $(document).ready(function(){
 
 					$('.ic-resposta').append('<em>alta</em> dispersão (dados heterogêneos)');
 
-				}
+				}*/
 				
 			}
 		}
