@@ -808,8 +808,7 @@ function geraValorPizza () {
 
 //gera o vetor com os valores para barra
 function geraValorBarra(){
-
-	var vetorBarra = vetorM(criaVetor('.ic-inputs')); //vetor com as frequencias de cada variavel
+	var vetorBarra = vetorFreq(criaVetor('.ic-inputs')); //vetor com as frequencias de cada variavel
 	var data = [[], []]; //inicializa vetor pra receber os objetos
 
 	//popula array com os valores
